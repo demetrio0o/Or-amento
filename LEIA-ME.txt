@@ -1,16 +1,20 @@
-COMO GERAR O APK (Orçamentos A Fernandes)
+COMO GERAR O APK E O PROGRAMA DE PC (Orçamentos A Fernandes)
 
 1. Crie uma conta grátis em github.com (se ainda não tiver).
 2. Crie um repositório novo, marcando "Private" (privado).
 3. Envie para ele TODOS os arquivos desta pasta, inclusive a pasta ".github".
    Pelo site: "Add file" > "Upload files", arraste tudo e confirme.
    Atenção: a pasta ".github" começa com ponto e pode ficar escondida no seu computador.
-4. Abra a aba "Actions" do repositório. O "Gerar APK" começa sozinho
-   (ou clique em "Gerar APK" > "Run workflow").
+4. Abra a aba "Actions" do repositório. Dois trabalhos começam sozinhos:
+   "Gerar APK" (celular) e "Gerar programa para PC (Windows)".
+   Se não começarem, clique em cada um > "Run workflow".
 5. Espere uns 5 a 10 minutos até aparecer o visto verde.
-6. Abra a execução, desça até "Artifacts" e baixe "orcamentos-a-fernandes-apk".
-   O zip baixado contém o arquivo orcamentos-a-fernandes.apk.
-7. Mande o APK para as pessoas. No Android elas precisam permitir
+6. Abra cada execução, desça até "Artifacts" e baixe:
+   - orcamentos-a-fernandes-apk       (contém o .apk para Android)
+   - orcamentos-a-fernandes-windows   (contém o Orcamentos-A-Fernandes-Instalador.exe)
+7. Mande o APK para os celulares e o instalador .exe para os computadores Windows.
+   No PC, o Windows pode mostrar "O Windows protegeu o computador":
+   clique em "Mais informações" > "Executar assim mesmo". É normal para programa sem assinatura paga. No Android elas precisam permitir
    "instalar apps de fontes desconhecidas" para o app que abrir o arquivo.
 
 IMPORTANTE
@@ -19,4 +23,4 @@ IMPORTANTE
   o app por cima de uma versão já instalada.
 - Para atualizar o app depois, troque os arquivos no repositório e baixe o APK novo.
   O número da versão sobe sozinho.
-- Os dados ficam em cada celular. Use Ajustes > Fazer backup de vez em quando.
+- Os dados ficam em cada aparelho (celular ou PC), sem sincronizar entre eles. Use Ajustes > Fazer backup de vez em quando.

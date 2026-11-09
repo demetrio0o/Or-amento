@@ -4,7 +4,8 @@
   "private": true,
   "description": "Aplicativo de orçamentos de serviço A Fernandes",
   "scripts": {
-    "prepare:web": "node scripts/prepare-web.js"
+    "prepare:web": "node scripts/prepare-web.js",
+    "pc": "electron-builder --win nsis --x64 --publish never"
   },
   "dependencies": {
     "@capacitor/android": "^6.2.0",
@@ -19,6 +20,43 @@
     "jspdf-autotable": "3.8.2"
   },
   "devDependencies": {
-    "@capacitor/cli": "^6.2.0"
+    "@capacitor/cli": "^6.2.0",
+    "electron": "^33.2.0",
+    "electron-builder": "^25.1.8"
+  },
+  "main": "electron/main.js",
+  "author": "A Fernandes",
+  "build": {
+    "appId": "com.afernandes.orcamentos",
+    "productName": "Orçamentos A Fernandes",
+    "directories": {
+      "output": "dist-pc",
+      "buildResources": "build"
+    },
+    "files": [
+      "electron/**/*",
+      "www/**/*",
+      "build/icon.png",
+      "package.json"
+    ],
+    "win": {
+      "target": [
+        {
+          "target": "nsis",
+          "arch": [
+            "x64"
+          ]
+        }
+      ],
+      "icon": "build/icon.ico",
+      "artifactName": "Orcamentos-A-Fernandes-Instalador.${ext}"
+    },
+    "nsis": {
+      "oneClick": false,
+      "allowToChangeInstallationDirectory": true,
+      "createDesktopShortcut": true,
+      "createStartMenuShortcut": true,
+      "language": "1046"
+    }
   }
 }
