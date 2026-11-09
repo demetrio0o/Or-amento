@@ -28,7 +28,7 @@
   "author": "A Fernandes",
   "build": {
     "appId": "com.afernandes.orcamentos",
-    "productName": "Orçamentos A Fernandes",
+    "productName": "A Fernandes Orçamentos",
     "directories": {
       "output": "dist-pc",
       "buildResources": "build"
