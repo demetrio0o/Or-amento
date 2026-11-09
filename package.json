@@ -1,0 +1,24 @@
+{
+  "name": "orcamentos-a-fernandes",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Aplicativo de orçamentos de serviço A Fernandes",
+  "scripts": {
+    "prepare:web": "node scripts/prepare-web.js"
+  },
+  "dependencies": {
+    "@capacitor/android": "^6.2.0",
+    "@capacitor/app": "^6.0.0",
+    "@capacitor/core": "^6.2.0",
+    "@capacitor/filesystem": "^6.0.0",
+    "@capacitor/share": "^6.0.0",
+    "@capacitor/status-bar": "^6.0.0",
+    "@fontsource-variable/montserrat": "^5.1.0",
+    "@fontsource-variable/public-sans": "^5.1.0",
+    "jspdf": "2.5.1",
+    "jspdf-autotable": "3.8.2"
+  },
+  "devDependencies": {
+    "@capacitor/cli": "^6.2.0"
+  }
+}
